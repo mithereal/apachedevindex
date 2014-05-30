@@ -1,5 +1,9 @@
+<!DOCTYPE html>
 <html>
-<head><link rel=StyleSheet HREF="devindex/projects.css" TYPE="text/css" ></head>
+<head>
+	<link rel=StyleSheet href="devindex/projects.css" type="text/css" >
+
+	</head>
 <h2>Server Configuration:</h2>
 <div id="version">
 <div id="apache">
@@ -25,7 +29,7 @@ printf("<b>Mysql:</b> %d\n", $mysqli->server_version);
 </div>
 <a href="devindex/phpinfo.php">phpinfo</a>
 <h2>Extensions Loaded:</h2>
-<div id="modules">
+<div id="modules" >
 	
 <?php
 $i=0;
@@ -71,7 +75,7 @@ foreach($dirs as $dir) {
    
     echo '<div id="project">';
     echo '<img src="devindex/img/folder.png">';
-    echo '<a href="http://127.0.0.1/'.$dir.'">'.$dir.'</a>';
+    echo '<a href="http://'.$_SERVER['SERVER_ADDR'].'/'.$dir.'">'.$dir.'</a>';
     echo '</div>';
     $i++;
 }

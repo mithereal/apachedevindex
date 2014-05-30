@@ -14,7 +14,13 @@ margin:auto;
 display:table-cell;
 margin:1em;
 padding:2em;
-border:1px solid #746A6A
+}
+#project:hover{
+display:table-cell;
+margin:1em;
+padding:2em;
+border:1px solid #746A6A;
+background:#B5B1B1;
 }
 #modules{
 display : table;
@@ -28,7 +34,7 @@ padding:2px;
 }
 #icon{
 float:left;
-background:url("img/module.png");
+background:url("/devindex/img/module.png");
 height:24px;
 width:24px;
 }
