@@ -1,0 +1,34 @@
+body
+{
+background:#C9C7C7
+}
+.row{
+display:table-row;
+}
+#projects{
+display : table;
+width:80%;
+margin:auto;
+}
+#project{
+display:table-cell;
+margin:1em;
+padding:2em;
+border:1px solid #746A6A
+}
+#modules{
+display : table;
+width:60%;
+margin:auto;
+}
+#module{
+display:table-cell;
+margin :2px;
+padding:2px;
+}
+#icon{
+float:left;
+background:url("img/module.png");
+height:24px;
+width:24px;
+}
