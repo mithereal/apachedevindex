@@ -1,7 +1,26 @@
+<?php
+include 'devindex/config.php';
+require 'devindex/config.local.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel=StyleSheet href="devindex/projects.css" type="text/css" >
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="devindex/css/bootstrap.min.css">
+
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="devindex/css/bootstrap-theme.min.css">
+
+<!-- Custom Theme -->
+<link rel=StyleSheet href="devindex/css/app.css" type="text/css" >
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="devindex/js/bootstrap.min.js"></script>
+
+<!-- Application JavaScript -->
+<script src="devindex/js/app.js"></script>
 
 	</head>
 <h2>Server Configuration:</h2>
@@ -9,8 +28,6 @@
 <div id="apache">
 	
 <?php
-include 'devindex/config.php';
-require 'devindex/config.local.php';
 $ver = split("[/ ]",$_SERVER['SERVER_SOFTWARE']);
 $apver = "$ver[1] $ver[2]";
 echo '<b>Apache:</b> ' . $apver;
@@ -74,7 +91,7 @@ foreach($dirs as $dir) {
 		 }
    
     echo '<div id="project">';
-    echo '<img src="devindex/img/folder.png">';
+    echo '<img src="devindex/images/folder.png">';
     echo '<a href="http://'.$_SERVER['SERVER_ADDR'].'/'.$dir.'">'.$dir.'</a>';
     echo '</div>';
     $i++;

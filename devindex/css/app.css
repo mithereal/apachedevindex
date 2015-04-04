@@ -1,6 +1,7 @@
 body
 {
-background:#C9C7C7
+background:#C9C7C7;
+margin: 1.5em;
 }
 .row{
 display:table-row;
@@ -34,7 +35,7 @@ padding:2px;
 }
 #icon{
 float:left;
-background:url("/devindex/img/module.png");
+background:url("/devindex/images/module.png");
 height:24px;
 width:24px;
 }
