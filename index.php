@@ -1,5 +1,5 @@
 <?php
-include 'devindex/config.php';
+@include 'devindex/config.php';
 require 'devindex/config.local.php';
 ?>
 
@@ -54,7 +54,7 @@ $modules=get_loaded_extensions();
 foreach($modules as $module)
 {
     $module=str_replace('mod_','',$module);
-    if(!in_array($module,$hidden))
+    if(!in_array($module,$config['hidden_module']))
     {
       if($i ==4 )
     {
@@ -82,7 +82,7 @@ $dirs=glob('*', GLOB_ONLYDIR);
 foreach($dirs as $dir) {
 	 $dir = str_replace('../', '', $dir);
 	 
-	 if(!in_array($dir,$hidden)){
+	 if(!in_array($dir,$config['hidden_directory'])){
 		 
 		 if($i == $config['display_colums'] )
 		 {
